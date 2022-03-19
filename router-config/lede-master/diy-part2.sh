@@ -31,8 +31,11 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 
 # ------------------------------- Other started -------------------------------
 #
-# Add luci-app-amlogic
+Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
+Add netifd
+svn co https://downloads.openwrt.org/snapshots/packages/aarch64_cortex-a53/base/netifd_2022-02-20-136006b8-1_aarch64_cortex-a53.ipk package/netifd
 
 # Add p7zip
 svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
